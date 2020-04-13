@@ -5,8 +5,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.hiskrtapps.apocalypse</groupId>
-    <artifactId>dao</artifactId>
+    <groupId>io.github.hiskrtapps</groupId>
+    <artifactId>apocalypse.dao</artifactId>
     <version>0.1-SNAPSHOT</version>
     <name>Apocalypse Dao</name>
 
