@@ -75,7 +75,7 @@ public abstract class ColumnCriteria extends CriteriaImpl {
   }
 
   @Override
-  public String toString() {
+  public final String toString() {
     final Set values = new LinkedHashSet();
     values.add(columnName);
     if (bindings.length != 0) {
@@ -92,7 +92,7 @@ public abstract class ColumnCriteria extends CriteriaImpl {
   }
 
   @Override
-  public Map<String, Object>[] bindings() {
+  public final Map<String, Object>[] bindings() {
     return bindings;
   }
 
@@ -119,10 +119,10 @@ public abstract class ColumnCriteria extends CriteriaImpl {
    * create the double array of values starting from an array of {@link Object}
    * needed to support batch
    * 
-   * @param values
-   * @return
+   * @param values to create the double array
+   * @return the double array
    */
-  protected static Object[][] arrayOfValues(Object... values) {
+  protected final static Object[][] arrayOfValues(Object... values) {
     final Object[][] arrayOfValues = new Object[values.length][];
     for (int i = 0; i < values.length; i++) {
       arrayOfValues[i] = new Object[] { values[i] };
@@ -134,10 +134,10 @@ public abstract class ColumnCriteria extends CriteriaImpl {
    * create the double array of values starting from an array of {@link Pair}
    * needed to support batch
    *
-   * @param values
-   * @return
+   * @param values to create the double array
+   * @return the double array
    */
-  protected static Object[][] arrayOfValues(Pair... values) {
+  protected final static Object[][] arrayOfValues(Pair... values) {
     final Object[][] arrayOfValues = new Object[values.length][];
     for (int i = 0; i < values.length; i++) {
       arrayOfValues[i] = new Object[] { values[i].getLeft(), values[i].getRight() };
@@ -149,10 +149,10 @@ public abstract class ColumnCriteria extends CriteriaImpl {
    * create the double array of values starting from an array of {@link List}
    * needed to support batch
    *
-   * @param values
-   * @return
+   * @param values to create the double array
+   * @return the double array
    */
-  protected static Object[][] arrayOfValues(List... values) {
+  protected final static Object[][] arrayOfValues(List... values) {
     return arrayOfValues((Object[])values);
   }
 

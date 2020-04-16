@@ -12,9 +12,9 @@ import java.util.Map;
 import static java.lang.String.format;
 
 /**
- * Decorator for {@link Find ).
+ * Decorator for {@link Find}.
  *
- * 'for update' close is appended to the given {@link Find) command
+ * 'for update' close is appended to the given {@link Find} command
  * (this solution is coupled with Oracle DBMS for which the 'for update' statement makes sense.)
  *
  */
@@ -46,21 +46,21 @@ public class ForUpdate<E extends Entity> implements Find<E> {
   private int seconds;
 
 /**
-   * A new {@link ForUpdate) is constructed for the given {@link Find)
+   * A new {@link ForUpdate} is constructed for the given {@link Find}
    *
-   * @param find {@link Find) to be decorated with {@link ForUpdate)
+   * @param find {@link Find} to be decorated with {@link ForUpdate}
    */
   public ForUpdate(Find<E> find) {
     this.find = find;
   }
 
 /**
-   * A new {@link ForUpdate) is constructed for the given {@link Find)
+   * A new {@link ForUpdate} is constructed for the given {@link Find}
    *
- * @param find {@link Find) to be decorated with {@link ForUpdate)
+ * @param find {@link Find} to be decorated with {@link ForUpdate}
  * @param seconds to release automatically the lock after
    */
-  public ForUpdate(Find<E> find, int seconds) {
+  public ForUpdate(final Find<E> find, int seconds) {
     this.find = find;
     this.seconds = seconds;
   }

@@ -65,7 +65,7 @@ public abstract class EntityMetadataDaoImpl<E extends Entity> extends DaoImpl<E>
   private Sao sao;
 
   /**
-   * return enclosing Dao instance
+   * @return the enclosing Dao instance
    */
   protected abstract Dao<E> self();
 

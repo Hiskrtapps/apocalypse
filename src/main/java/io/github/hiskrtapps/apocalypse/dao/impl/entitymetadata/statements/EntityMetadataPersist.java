@@ -67,7 +67,7 @@ public final class EntityMetadataPersist<E extends Entity> extends EntityMetadat
    * later with a pre-generated sequence value
    *
    *
-   * @return
+   * @return the command
    */
   @Override
   public final String command() {

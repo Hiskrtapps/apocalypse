@@ -40,9 +40,10 @@ public class UniqueConstraintNotFoundException extends MetadataObjectNotFoundExc
    * 
    * @param entityClass missing unique constraint belong to
    * @param uniqueConstraintName name of the missing unique constraint
+   * @param missingPart specific exception describing the missing part
    */
   public UniqueConstraintNotFoundException(final Class<? extends Entity> entityClass, final String uniqueConstraintName,
-      MetadataObjectNotFoundException missingPart) {
+      final MetadataObjectNotFoundException missingPart) {
     super(entityClass, OBJECT_TYPE, uniqueConstraintName, missingPart);
   }
 

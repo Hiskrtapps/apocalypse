@@ -37,7 +37,7 @@ public final class Exists extends CriteriaImpl {
   /**
    * Creates an instance of {@link Exists}
    *
-   * @param name of the {@Exists Equal} criteria
+   * @param name of the {@link Equal} criteria
    * @param find the sub-selection to be executed and tested
    */
   public Exists(String name, Find find) {

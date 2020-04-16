@@ -36,9 +36,9 @@ public interface Criteria {
    * for the column - otherwise an {@link Equal} criteria is created for the
    * column
    *
-   * @param filterColumns
-   * @param arrayOfValues
-   * @return
+   * @param filterColumns list of columns that to filter by
+   * @param arrayOfValues list of values of the columns to filter by
+   * @return the list of criteria
    */
   static List<Criteria> convert(final Column[] filterColumns, final Object... arrayOfValues) {
     final List<Criteria> criteria = new ArrayList<>();
@@ -57,9 +57,9 @@ public interface Criteria {
    * logic is: - all the values are taken by the given list of entities. An
    * {@link Equal} criteria is created for the column
    *
-   * @param filterColumns
-   * @param entities
-   * @return
+   * @param filterColumns list of columns that to filter by
+   * @param entities list of entities to get value to filter by
+   * @return the list of {@link Criteria}
    */
   static List<Criteria> convert(final Column[] filterColumns, final List<Entity> entities) {
     final List<Criteria> criteria = new ArrayList<>();

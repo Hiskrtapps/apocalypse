@@ -40,7 +40,9 @@ public final class Page<E extends Entity> implements Iterable<E> {
   /**
    * Construct a new Page
    *
-   * @param total    entities without considering paging
+   * @param offset to start paging from
+   * @param limit of the page
+   * @param total entities without considering paging
    * @param entities contained in this page
    */
   public Page(final Long total, final Long offset, final Integer limit, final List<E> entities) {

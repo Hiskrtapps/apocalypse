@@ -63,6 +63,7 @@ public abstract class EntityMetadataStatement<E extends Entity> implements State
   /**
    * @param name of the statement
    * @param entityMetadata on which the is based upon
+   * @param criteria to apply
    * @param entities to be take data from
    */
   protected EntityMetadataStatement(final String name, final EntityMetadata<E> entityMetadata, final Criteria criteria,
@@ -130,7 +131,7 @@ public abstract class EntityMetadataStatement<E extends Entity> implements State
    * Generate a where clause for passed convert. This is an utility method
    * callable by extending classes
    *
-   * @return
+   * @return the where clause
    */
   protected final String whereClause() {
     if (criteria != null) {

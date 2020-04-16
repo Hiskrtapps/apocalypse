@@ -36,7 +36,7 @@ public interface Dao<E extends Entity> {
   /**
    * Saves a given entity.
    *
-   * @param entity
+   * @param entity to persist
    * @return true if entity has been persisted and the information is returned
    *         by the underlying system, false otherwise
    */
@@ -45,7 +45,7 @@ public interface Dao<E extends Entity> {
   /**
    * Saves all given entities.
    *
-   * @param entities entities
+   * @param entities to persist
    * @return the number of persisted entities if the information is returned by
    *         the underlying system, a negative number otherwise
    */
@@ -54,7 +54,7 @@ public interface Dao<E extends Entity> {
   /**
    * Saves all given entities.
    *
-   * @param entities entities
+   * @param entities to persist
    * @return the number of persisted entities if the information is returned by
    *         the underlying system, a negative number otherwise
    */
@@ -63,7 +63,7 @@ public interface Dao<E extends Entity> {
   /**
    * Update given entity. All fields are updated by primary key.
    *
-   * @param entity
+   * @param entity to persist
    * @return true if entity has been updated and the information is returned by
    *         the underlying system, false otherwise
    * @throws PrimaryKeyNotFoundException if primary key is not found
@@ -76,8 +76,8 @@ public interface Dao<E extends Entity> {
   /**
    * Update given entity. All fields are updated by unique constraint provided.
    *
-   * @param uniqueConstraint
-   * @param entity
+   * @param uniqueConstraint to persist by
+   * @param entity to persist
    * @return true if entity has been updated and the information is returned by
    *         the underlying system, false otherwise
    * @throws UniqueConstraintNotFoundException if unique constraint is not found
@@ -89,8 +89,8 @@ public interface Dao<E extends Entity> {
   /**
    * Update given entity. All fields are updated by criteria provided.
    *
-   * @param criteria
-   * @param entity
+   * @param criteria to apply
+   * @param entity to persist
    * @return true if entity has been updated and the information is returned by
    *         the underlying system, false otherwise
    * @throws UniqueConstraintNotFoundException if unique constraint is not found
@@ -102,8 +102,8 @@ public interface Dao<E extends Entity> {
   /**
    * Update given entities. All fields are updated by unique constraint provided
    *
-   * @param uniqueConstraint
-   * @param entities
+   * @param uniqueConstraint to persist by
+   * @param entities to persist
    * @return the number of updated entities if the information is returned by
    *         the underlying system, a negative number otherwise
    * @throws UniqueConstraintNotFoundException if unique constraint is not found
@@ -113,8 +113,8 @@ public interface Dao<E extends Entity> {
   /**
    * Update given entities. All fields are updated by unique constraint provided
    *
-   * @param uniqueConstraint
-   * @param entities
+   * @param uniqueConstraint to persist by
+   * @param entities to persist
    * @return the number of updated entities if the information is returned by
    *         the underlying system, a negative number otherwise
    * @throws UniqueConstraintNotFoundException if unique constraint is not found
@@ -124,8 +124,8 @@ public interface Dao<E extends Entity> {
   /**
    * Update given entities. All fields are updated by criteria provided
    *
-   * @param criteria
-   * @param entities
+   * @param criteria to apply
+   * @param entities to persist
    * @return the number of updated entities if the information is returned by
    *         the underlying system, a negative number otherwise
    * @throws UniqueConstraintNotFoundException if unique constraint is not found
@@ -135,8 +135,8 @@ public interface Dao<E extends Entity> {
   /**
    * Update given entities. All fields are updated by criteria provided
    *
-   * @param criteria
-   * @param entities
+   * @param criteria to apply
+   * @param entities to persist
    * @return the number of updated entities if the information is returned by
    *         the underlying system, a negative number otherwise
    * @throws UniqueConstraintNotFoundException if unique constraint is not found
@@ -146,7 +146,7 @@ public interface Dao<E extends Entity> {
   /**
    * Update given entities. All fields are updated by unique constraint provided
    *
-   * @param entities
+   * @param entities to persist
    * @return the number of updated entities if the information is returned by
    *         the underlying system, a negative number otherwise
    * @throws PrimaryKeyNotFoundException if primary key is not found
@@ -156,7 +156,7 @@ public interface Dao<E extends Entity> {
   /**
    * Update given entities. All fields are updated by unique constraint provided
    *
-   * @param entities
+   * @param entities to persist
    * @return the number of updated entities if the information is returned by
    *         the underlying system, a negative number otherwise
    * @throws PrimaryKeyNotFoundException if primary key is not found
@@ -178,7 +178,7 @@ public interface Dao<E extends Entity> {
   /**
    * Delete entity by unique constraint provided
    *
-   * @param uniqueConstraint
+   * @param uniqueConstraint to persist by
    * @param values of unique constraint fields
    * @return true if entity has been deleted and the information is returned by
    *         the underlying system, false otherwise
@@ -276,7 +276,7 @@ public interface Dao<E extends Entity> {
   /**
    * Find entity by unique constraint
    *
-   * @param uniqueConstraint
+   * @param uniqueConstraint to persist by
    * @param values of unique constraint fields
    * @return found entity, null if not found
    * @throws UniqueConstraintNotFoundException if unique constraint is not found

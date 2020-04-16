@@ -15,7 +15,7 @@ import io.github.hiskrtapps.apocalypse.dao.Entity;
  * </pre>
  *
  *
- * @param <E>
+ * @param <E> entity
  */
 public final class PagedResult<E extends Entity> {
 

@@ -204,7 +204,7 @@ public abstract class DaoImpl<E extends Entity> implements Dao<E> {
   protected abstract UniqueConstraint uniqueConstraint(Column[] columns);
 
   /**
-   * @param uniqueConstraint
+   * @param uniqueConstraint to get the columns by
    * @return Columns composing given UniqueConstraint
    * @throws UniqueConstraintNotFoundException if a uniqueConstraint listed column
    *           does not exists
@@ -212,15 +212,15 @@ public abstract class DaoImpl<E extends Entity> implements Dao<E> {
   protected abstract Column[] columns(UniqueConstraint uniqueConstraint);
 
   /**
-   * @param columnNames
+   * @param columnNames to get the columns by
    * @return Columns related to passed columnNames
    * @throws ColumnNotFoundException if a listed column does not exists
    */
   protected abstract Column[] columns(String... columnNames);
 
   /**
-   * @param columns
-   * @return Columns related to passed columnNames
+   * @param columns to be checked
+   * @return checked columns
    * @throws ColumnNotFoundException if a listed column does not exists
    */
   protected abstract Column[] columns(Column... columns);

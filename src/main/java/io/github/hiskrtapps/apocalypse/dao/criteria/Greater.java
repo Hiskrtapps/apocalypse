@@ -6,7 +6,7 @@ package io.github.hiskrtapps.apocalypse.dao.criteria;
 import javax.persistence.Column;
 
 /**
- * The {@link Greater} criteria implements the comparison: "'column' > value"
+ * The {@link Greater} criteria implements the comparison: "'column' &gt; value"
  *
  */
 public final class Greater extends ColumnCriteria {
@@ -53,6 +53,7 @@ public final class Greater extends ColumnCriteria {
   /**
    * Creates an instance of {@link Greater}
    *
+   * @param name of the {@link Greater} criteria
    * @param columnName of the {@link Column} to be compared
    * @param values the column is compared with (multiple values should be
    *          specified in case of batch operation)

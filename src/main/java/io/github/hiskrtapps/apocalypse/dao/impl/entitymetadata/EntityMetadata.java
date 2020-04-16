@@ -20,7 +20,7 @@ import io.github.hiskrtapps.apocalypse.dao.Entity;
  * <li>{@link javax.persistence.Entity} annotation at class level</li>
  * <li>{@link javax.persistence.Table} annotation at class level specifying:
  * <ul>
- * <li>name</li> representing the name of the table
+ * <li>name representing the name of the table</li>
  * <li>array of {@link UniqueConstraint} representing primary key constraint and
  * any other unique key constraint. Each constraint shall specify columns it is
  * composed by</li>
@@ -50,21 +50,21 @@ public interface EntityMetadata<E extends Entity> {
   /**
    * Gets the value of entityClass
    * 
-   * @return the entityClass field of {@link EntityMetadata#entityClass}
+   * @return the entityClass
    */
   Class<E> getEntityClass();
 
   /**
    * Gets the value of tableName
    * 
-   * @return the tableName field of {@link EntityMetadata#tableName}
+   * @return the tableName
    */
   String getTableName();
 
   /**
    * Gets the value of primaryKey
    * 
-   * @return the primaryKey field of {@link EntityMetadata#primaryKey}
+   * @return the primaryKey
    */
   UniqueConstraint getPrimaryKey();
 
@@ -117,6 +117,7 @@ public interface EntityMetadata<E extends Entity> {
   /**
    * return the Field for a given columnName
    *
+   * @param columnName to get the field by
    * @return field if any, null otherwise
    */
   Field getField(String columnName);

@@ -6,7 +6,7 @@ package io.github.hiskrtapps.apocalypse.dao.criteria;
 import javax.persistence.Column;
 
 /**
- * The {@link NotEqual} criteria implements the comparison: "'column' <> value"
+ * The {@link NotEqual} criteria implements the comparison: "'column' &lt;&gt; value"
  *
  */
 public final class NotEqual extends ColumnCriteria {

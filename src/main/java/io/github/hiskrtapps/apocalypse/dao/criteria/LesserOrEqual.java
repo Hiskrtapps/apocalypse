@@ -6,7 +6,7 @@ package io.github.hiskrtapps.apocalypse.dao.criteria;
 import javax.persistence.Column;
 
 /**
- * The {@link LesserOrEqual} criteria implements the comparison: "'column' <= value"
+ * The {@link LesserOrEqual} criteria implements the comparison: "'column' &lt;= value"
  *
  */
 public final class LesserOrEqual extends ColumnCriteria {

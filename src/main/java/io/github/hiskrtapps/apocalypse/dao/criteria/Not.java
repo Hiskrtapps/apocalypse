@@ -16,7 +16,7 @@ import java.util.Map;
  * NOT acts on one criteria. To negate two or more criteria, repeat the NOT for each one.
  * In comparisons, using NOT often is a matter of style. The following two clauses are equivalent:
  * - WHERE NOT state = 'CA'
- * - WHERE state <> 'CA'
+ * - WHERE state &lt;&gt; 'CA'
  *
  */
 public final class Not extends CriteriaImpl {
