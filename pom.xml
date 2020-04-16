@@ -7,7 +7,7 @@
 
     <groupId>io.github.hiskrtapps</groupId>
     <artifactId>apocalypse.dao</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <packaging>jar</packaging>
     <description>Apocalypse Dao interface library</description>
@@ -165,7 +165,7 @@
                             <goal>sign</goal>
                         </goals>
                         <configuration>
-                            <skip>true</skip>
+                            <skip>${skip.sign.gpg}</skip>
                         </configuration>
                     </execution>
                 </executions>
@@ -178,7 +178,7 @@
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <keepStagingRepositoryOnFailure>true</keepStagingRepositoryOnFailure>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin-->
         </plugins>
