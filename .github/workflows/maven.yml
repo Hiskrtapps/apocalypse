@@ -20,5 +20,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+        server-id: ossrs
+        server-username: OSSRH_USERNAME
+        server-password: OSSRH_USERNAME
     - name: Build with Maven
       run: mvn -B deploy --file pom.xml
