@@ -166,6 +166,7 @@
                         </goals>
                         <configuration>
                             <skip>${skip.sign.gpg}</skip>
+                            <keyname>267DC42581E73766</keyname>
                         </configuration>
                     </execution>
                 </executions>
