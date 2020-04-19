@@ -167,7 +167,6 @@
                         <configuration>
                             <skip>${skip.sign.gpg}</skip>
                             <keyname>C95992A8579E9A8A</keyname>
-                            <gpg.executable>gpg</gpg.executable>
                         </configuration>
                     </execution>
                 </executions>
