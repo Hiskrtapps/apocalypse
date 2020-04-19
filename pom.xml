@@ -7,7 +7,7 @@
 
     <groupId>io.github.hiskrtapps</groupId>
     <artifactId>apocalypse.dao</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <packaging>jar</packaging>
     <description>Apocalypse Dao interface library</description>
