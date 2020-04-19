@@ -28,6 +28,7 @@ jobs:
       run: |
         cat <(echo -e "${{secrets.GPG_PRIVATE_KEY}}") | gpg --batch --import
         gpg --list-secret-keys --keyid-format LONG
+        export GPG_TTY=$(tty)
     - name: Build with Maven
       run: mvn -B deploy -Pdeploy -Dgpg.passphrase=${{secrets.GPG_PASSPHRASE}} --file pom.xml 
       env:  
