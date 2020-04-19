@@ -24,9 +24,8 @@ jobs:
         server-username: OSSRH_USERNAME
         server-password: OSSRH_PASSWORD
     - id: install-secret-key
-      name: Install gpg secret key
+      name: Install GPG Private Key
       run: |
-        export GPG_TTY=$(tty)
         cat <(echo -e "${{secrets.GPG_PRIVATE_KEY}}") | gpg --batch --import
         gpg --list-secret-keys --keyid-format LONG
     - name: Build with Maven
