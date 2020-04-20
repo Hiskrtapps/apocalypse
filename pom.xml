@@ -101,7 +101,7 @@
             </properties>
         </profile>
         <profile>
-            <id>release</id>
+            <id>build</id>
             <properties>
                 <skip.sign.gpg>true</skip.sign.gpg>
                 <skip.package.javadoc>true</skip.package.javadoc>
@@ -109,7 +109,7 @@
             </properties>
         </profile>
         <profile>
-            <id>deploy</id>
+            <id>release</id>
             <properties>
                 <skip.sign.gpg>false</skip.sign.gpg>
                 <skip.package.javadoc>false</skip.package.javadoc>
