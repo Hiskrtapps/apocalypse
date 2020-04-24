@@ -104,9 +104,9 @@
         <profile>
             <id>build</id>
             <properties>
-                <skip.sign.gpg>false</skip.sign.gpg>
+                <skip.sign.gpg>true</skip.sign.gpg>
                 <skip.package.javadoc>false</skip.package.javadoc>
-                <skip.package.sources>false</skip.package.sources>
+                <skip.package.sources>true</skip.package.sources>
                 <skip.release>true</skip.release>
             </properties>
         </profile>
