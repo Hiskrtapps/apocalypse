@@ -7,7 +7,7 @@
 
     <groupId>io.github.hiskrtapps</groupId>
     <artifactId>apocalypse.dao</artifactId>
-    <version>0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <packaging>jar</packaging>
     <description>Apocalypse Dao interface library</description>
@@ -98,14 +98,16 @@
                 <skip.sign.gpg>true</skip.sign.gpg>
                 <skip.package.javadoc>true</skip.package.javadoc>
                 <skip.package.sources>true</skip.package.sources>
+                <skip.release>true</skip.release>
             </properties>
         </profile>
         <profile>
             <id>build</id>
             <properties>
-                <skip.sign.gpg>true</skip.sign.gpg>
-                <skip.package.javadoc>true</skip.package.javadoc>
-                <skip.package.sources>true</skip.package.sources>
+                <skip.sign.gpg>false</skip.sign.gpg>
+                <skip.package.javadoc>false</skip.package.javadoc>
+                <skip.package.sources>false</skip.package.sources>
+                <skip.release>true</skip.release>
             </properties>
         </profile>
         <profile>
@@ -114,6 +116,7 @@
                 <skip.sign.gpg>false</skip.sign.gpg>
                 <skip.package.javadoc>false</skip.package.javadoc>
                 <skip.package.sources>false</skip.package.sources>
+                <skip.release>false</skip.release>
             </properties>
         </profile>
     </profiles>
@@ -183,6 +186,19 @@
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                        <tagNameFormat>@{project.version}</tagNameFormat>
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <dryRun>${skip.release}</dryRun>
+                    </checkModificationExcludes>
                 </configuration>
             </plugin>
         </plugins>
