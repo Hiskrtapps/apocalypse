@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.hiskrtapps</groupId>
     <artifactId>apocalypse.dao</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <packaging>jar</packaging>
     <description>Apocalypse Dao interface library</description>
@@ -31,7 +29,8 @@
         <connection>scm:git:git://github.com/Hiskrtapps/apocalypse-dao.git</connection>
         <developerConnection>scm:git:ssh://github.com:Hiskrtapps/apocalypse-dao.git</developerConnection>
         <url>https://github.com/Hiskrtapps/apocalypse</url>
-    </scm>
+      <tag>apocalypse.dao-0.0.3</tag>
+  </scm>
 
     <distributionManagement>
         <snapshotRepository>
@@ -98,7 +97,6 @@
                 <skip.sign.gpg>true</skip.sign.gpg>
                 <skip.package.javadoc>true</skip.package.javadoc>
                 <skip.package.sources>true</skip.package.sources>
-                <skip.release>true</skip.release>
             </properties>
         </profile>
         <profile>
@@ -107,7 +105,6 @@
                 <skip.sign.gpg>true</skip.sign.gpg>
                 <skip.package.javadoc>false</skip.package.javadoc>
                 <skip.package.sources>true</skip.package.sources>
-                <skip.release>true</skip.release>
             </properties>
         </profile>
         <profile>
@@ -116,7 +113,6 @@
                 <skip.sign.gpg>false</skip.sign.gpg>
                 <skip.package.javadoc>false</skip.package.javadoc>
                 <skip.package.sources>false</skip.package.sources>
-                <skip.release>false</skip.release>
             </properties>
         </profile>
     </profiles>
@@ -197,7 +193,6 @@
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                         <tagNameFormat>@{project.version}</tagNameFormat>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
-                        <dryRun>${skip.release}</dryRun>
                     </checkModificationExcludes>
                 </configuration>
             </plugin>
