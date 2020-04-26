@@ -84,7 +84,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <profiles>
@@ -193,7 +192,6 @@
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                         <tagNameFormat>@{project.version}</tagNameFormat>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
-                        <releaseProfiles>release</releaseProfiles>
                     </checkModificationExcludes>
                 </configuration>
             </plugin>
