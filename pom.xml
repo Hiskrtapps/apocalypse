@@ -192,6 +192,7 @@
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                         <tagNameFormat>@{project.version}</tagNameFormat>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <releaseProfiles>release</releaseProfiles>
                     </checkModificationExcludes>
                 </configuration>
             </plugin>
