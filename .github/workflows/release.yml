@@ -21,7 +21,7 @@ jobs:
       - id: install-secret-key
         name: Install GPG Private Key
         run: |
-          cat < (echo -e "${{secrets.GPG_PRIVATE_KEY}}") | gpg --batch --import
+          cat <(echo -e "${{secrets.GPG_PRIVATE_KEY}}") | gpg --batch --import
           gpg --list-secret-keys --keyid-format LONG
       - name: Git Credentials Configuration
         run: |
