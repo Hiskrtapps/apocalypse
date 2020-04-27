@@ -21,7 +21,6 @@ jobs:
         server-id: ossrh
         server-username: OSSRH_USERNAME
         server-password: OSSRH_PASSWORD
-        credentials: ${{secrets.GIT_CREDENTIALS}}
     - id: install-secret-key
       name: Install GPG Private Key
       run: |
@@ -32,4 +31,3 @@ jobs:
       env:
         OSSRH_USERNAME: ${{secrets.OSSRH_USERNAME}}
         OSSRH_PASSWORD: ${{secrets.OSSRH_PASSWORD}}
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
