@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-          servers: "[{id: ossrh, username: OSSRH_USERNAME, password: OSSRH_PASSWORD}]"
+          servers: '[{"id": "ossrh", "username": "OSSRH_USERNAME", "password": "OSSRH_PASSWORD"}]'
       - id: install-secret-key
         name: Install GPG Private Key
         run: |
