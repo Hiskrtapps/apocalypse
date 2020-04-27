@@ -24,7 +24,7 @@ jobs:
           cat < (echo -e "${{secrets.GPG_PRIVATE_KEY}}") | gpg --batch --import
           gpg --list-secret-keys --keyid-format LONG
       - id: git credential
-        name: Install GPG Private Key
+        name: Git Credentials Configuration
         run: |
           git config --global user.email "giampaolo.grieco@gmail.com" | git config --global user.name "Giampaolo Grieco"
       - name: Build with Maven
