@@ -28,7 +28,8 @@ jobs:
         gpg --list-secret-keys --keyid-format LONG
     - name: Build with Maven
       run: mvn -B deploy release:prepare release:perform --batch-mode -Prelease -Dgpg.passphrase=${{secrets.GPG_PASSPHRASE}} --file pom.xml
-      env:  
+      credentials: ${{secrets.GIT_CREDENTIALS}}
+      env:
         OSSRH_USERNAME: ${{secrets.OSSRH_USERNAME}}
         OSSRH_PASSWORD: ${{secrets.OSSRH_PASSWORD}}
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
