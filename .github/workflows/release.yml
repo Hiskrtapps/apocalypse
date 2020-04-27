@@ -30,3 +30,4 @@ jobs:
           OSSRH_PASSWORD: ${{secrets.OSSRH_PASSWORD}}
           GIT_USERNAME: ${{secrets.GIT_USERNAME}}
           GIT_PASSWORD: ${{secrets.GIT_PASSWORD}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
