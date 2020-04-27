@@ -25,7 +25,7 @@ jobs:
           gpg --list-secret-keys --keyid-format LONG
       - name: Git Credentials Configuration
         run: |
-          git config --global user.email "giampaolo.grieco@gmail.com" | git config --global user.name "Giampaolo Grieco"
+          git config user.email "giampaolo.grieco@gmail.com" | git config user.name "Giampaolo Grieco"
       - name: Build with Maven
         run: mvn -B deploy release:prepare release:perform --batch-mode -Prelease -Dgpg.passphrase=${{secrets.GPG_PASSPHRASE}} --file pom.xml --settings settings.xml
         env:
