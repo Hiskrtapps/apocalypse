@@ -26,7 +26,7 @@ jobs:
       - name: Config Git
         run: 'git config user.email giampaolo.grieco@gmail.com && git config user.name "Giampaolo Grieco" && git status'
       - name: Build with Maven
-        run: mvn -B deploy release:prepare release:perform --batch-mode -Prelease -Dgpg.passphrase=${{secrets.GPG_PASSPHRASE}} --file pom.xml --settings settings.xml
+        run: mvn -B -e -X deploy release:prepare release:perform --batch-mode -Prelease -Dgpg.passphrase=${{secrets.GPG_PASSPHRASE}} --file pom.xml --settings settings.xml
         env:
           OSSRH_USERNAME: ${{secrets.OSSRH_USERNAME}}
           OSSRH_PASSWORD: ${{secrets.OSSRH_PASSWORD}}
