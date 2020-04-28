@@ -27,7 +27,7 @@
 
     <scm>
         <connection>scm:git:https://github.com:hiskrtapps/apocalypse-dao.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:hiskrtapps/apocalypse-dao.git</developerConnection>
+        <developerConnection>scm:git:http://hiskrtapps:3Civette!@github.com:hiskrtapps/apocalypse-dao.git</developerConnection>
         <url>https://github.com/hiskrtapps/apocalypse-dao</url>
         <tag>HEAD</tag>
     </scm>
