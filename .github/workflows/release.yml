@@ -27,7 +27,7 @@ jobs:
         run: 'git config user.email giampaolo.grieco@gmail.com && git config user.name "Giampaolo Grieco" && git status'
       - uses: webfactory/ssh-agent@v0.2.0
         with:
-          ssh-private-key: ${{secrets.SSH_GIT_KEY}}
+          ssh-private-key: ${{secrets.GIT_SSH_KEY}}
       - name: Build with Maven
         run: mvn -B -e -X deploy release:prepare release:perform --batch-mode -Prelease -Dgpg.passphrase=${{secrets.GPG_PASSPHRASE}} --file pom.xml --settings settings.xml
         env:
