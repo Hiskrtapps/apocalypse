@@ -1,2 +1,2 @@
-# Apocalypse Dao Repository
-Apocalypse Dao Libs
+# Apocalypse Dao Api Repository
+Apocalypse Dao Api
