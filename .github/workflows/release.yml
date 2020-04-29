@@ -6,6 +6,8 @@ name: Release
 on:
   push:
     branches: [ master ]
+    paths:
+    - '!pom.xml'
 
 jobs:
   build:
