@@ -190,10 +190,10 @@
                 <configuration>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
-                        <tagNameFormat>${project.version}</tagNameFormat>
-                        <autoVersionSubmodules>true</autoVersionSubmodules>
-                        <releaseProfiles>release</releaseProfiles>
                     </checkModificationExcludes>
+                    <tagNameFormat>@{project.version}</tagNameFormat>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <releaseProfiles>release</releaseProfiles>
                 </configuration>
             </plugin>
         </plugins>
