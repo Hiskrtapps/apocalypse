@@ -31,4 +31,4 @@ jobs:
           OSSRH_USERNAME: ${{secrets.OSSRH_USERNAME}}
           OSSRH_PASSWORD: ${{secrets.OSSRH_PASSWORD}}
           GIT_USERNAME: ${{github.actor}}
-          GIT_PASSWORD: ${{secrets.GITHUB_TOKEN}}
+          GIT_PASSWORD: ${{secrets.GITHUB_TOKEN}} 
