@@ -7,7 +7,7 @@ on:
   push:
     branches: [ master ]
     paths:
-    - '!pom.xml'
+    - '!pom.xml' 
 
 jobs:
   build:
