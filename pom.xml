@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.hiskrtapps</groupId>
-    <artifactId>apocalypse.dao</artifactId>
+    <artifactId>apocalypse-dao-api</artifactId>
     <version>0.0.13-SNAPSHOT</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <packaging>jar</packaging>
@@ -26,9 +26,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com:hiskrtapps/apocalypse-dao.git</connection>
-        <developerConnection>scm:git:http://${GIT_USERNAME}:${GIT_PASSWORD}!@github.com/hiskrtapps/apocalypse-dao.git</developerConnection>
-        <url>https://github.com/hiskrtapps/apocalypse-dao</url>
+        <connection>scm:git:https://github.com:hiskrtapps/apocalypse-dao-api.git</connection>
+        <developerConnection>scm:git:http://${GIT_USERNAME}:${GIT_PASSWORD}!@github.com/hiskrtapps/apocalypse-dao-api.git</developerConnection>
+        <url>https://github.com/hiskrtapps/apocalypse-dao-api</url>
         <tag>HEAD</tag>
     </scm>
 
