@@ -5,7 +5,7 @@
 
     <groupId>io.github.hiskrtapps</groupId>
     <artifactId>apocalypse-dao-api</artifactId>
-    <version>0.0.26-SNAPSHOT</version>
+    <version>0.0.26</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <packaging>jar</packaging>
     <description>Apocalypse Dao interface library</description>
@@ -30,7 +30,7 @@
         <!--suppress UnresolvedMavenProperty -->
         <developerConnection>scm:git:http://${GIT_USERNAME}:${GIT_PASSWORD}!@github.com/hiskrtapps/apocalypse-dao-api.git</developerConnection>
         <url>https://github.com/hiskrtapps/apocalypse-dao-api</url>
-        <tag>HEAD</tag>
+        <tag>0.0.26</tag>
     </scm>
 
     <distributionManagement>
