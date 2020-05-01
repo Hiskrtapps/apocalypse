@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.criteria;
+package io.github.hiskrtapps.apocalypse.dao.api.criteria;
 
 import static java.lang.String.format;
 import static org.apache.commons.lang3.StringUtils.repeat;

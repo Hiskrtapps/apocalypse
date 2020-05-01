@@ -1,16 +1,16 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.statements;
+package io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.statements;
 
 import java.util.Map;
 
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.EntityMetadata;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.EntityMetadata;
 import org.apache.commons.lang3.StringUtils;
 
-import io.github.hiskrtapps.apocalypse.dao.Entity;
-import io.github.hiskrtapps.apocalypse.dao.criteria.Criteria;
-import io.github.hiskrtapps.apocalypse.dao.statements.Find;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.criteria.Criteria;
+import io.github.hiskrtapps.apocalypse.dao.api.statements.Find;
 
 /**
  * Class to format a find statement.

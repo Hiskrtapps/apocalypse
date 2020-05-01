@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.exceptions;
+package io.github.hiskrtapps.apocalypse.dao.api.exceptions;
 
 import org.apache.commons.lang3.StringUtils;
 

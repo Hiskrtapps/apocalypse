@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao;
+package io.github.hiskrtapps.apocalypse.dao.api;
 
 /**
  * Interface for generic Sequence Access Object operations related to a sequence

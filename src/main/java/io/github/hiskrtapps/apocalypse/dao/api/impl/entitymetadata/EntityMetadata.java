@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata;
+package io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata;
 
 import java.lang.reflect.Field;
 import java.util.Map;
@@ -9,7 +9,7 @@ import java.util.Map;
 import javax.persistence.Column;
 import javax.persistence.UniqueConstraint;
 
-import io.github.hiskrtapps.apocalypse.dao.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
 
 /**
  * EntityMetadata related to an Entity

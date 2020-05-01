@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.statements;
+package io.github.hiskrtapps.apocalypse.dao.api.statements;
 
 import java.util.Map;
 

@@ -1,9 +1,9 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.impl;
+package io.github.hiskrtapps.apocalypse.dao.api.impl;
 
-import static io.github.hiskrtapps.apocalypse.dao.criteria.Criteria.convert;
+import static io.github.hiskrtapps.apocalypse.dao.api.criteria.Criteria.convert;
 import static java.util.stream.IntStream.of;
 
 import java.util.Arrays;
@@ -12,14 +12,14 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.UniqueConstraint;
 
-import io.github.hiskrtapps.apocalypse.dao.criteria.And;
-import io.github.hiskrtapps.apocalypse.dao.criteria.Criteria;
-import io.github.hiskrtapps.apocalypse.dao.exceptions.ColumnNotFoundException;
-import io.github.hiskrtapps.apocalypse.dao.exceptions.OneAffectedEntityExpectedException;
-import io.github.hiskrtapps.apocalypse.dao.exceptions.PrimaryKeyNotFoundException;
-import io.github.hiskrtapps.apocalypse.dao.exceptions.UniqueConstraintNotFoundException;
-import io.github.hiskrtapps.apocalypse.dao.Dao;
-import io.github.hiskrtapps.apocalypse.dao.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.criteria.And;
+import io.github.hiskrtapps.apocalypse.dao.api.criteria.Criteria;
+import io.github.hiskrtapps.apocalypse.dao.api.exceptions.ColumnNotFoundException;
+import io.github.hiskrtapps.apocalypse.dao.api.exceptions.OneAffectedEntityExpectedException;
+import io.github.hiskrtapps.apocalypse.dao.api.exceptions.PrimaryKeyNotFoundException;
+import io.github.hiskrtapps.apocalypse.dao.api.exceptions.UniqueConstraintNotFoundException;
+import io.github.hiskrtapps.apocalypse.dao.api.Dao;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
 
 /**
  * Dao implementation with two main purposes:

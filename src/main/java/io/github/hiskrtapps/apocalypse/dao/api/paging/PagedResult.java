@@ -1,9 +1,9 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.paging;
+package io.github.hiskrtapps.apocalypse.dao.api.paging;
 
-import io.github.hiskrtapps.apocalypse.dao.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
 
 /**
  * Page result is the object mapping the result of a paged find statement

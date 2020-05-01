@@ -1,9 +1,9 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata;
+package io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata;
 
-import io.github.hiskrtapps.apocalypse.dao.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.persistence.*;

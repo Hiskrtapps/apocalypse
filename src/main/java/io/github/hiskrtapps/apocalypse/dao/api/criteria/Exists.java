@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.criteria;
+package io.github.hiskrtapps.apocalypse.dao.api.criteria;
 
 import static java.lang.String.format;
 import static java.util.Arrays.copyOf;
@@ -9,7 +9,7 @@ import static java.util.Arrays.copyOf;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import io.github.hiskrtapps.apocalypse.dao.statements.Find;
+import io.github.hiskrtapps.apocalypse.dao.api.statements.Find;
 
 /**
  * The {@link Exists} criteria implements the condition: "exists (selection)"

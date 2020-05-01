@@ -27,6 +27,7 @@
 
     <scm>
         <connection>scm:git:https://github.com:hiskrtapps/apocalypse-dao-api.git</connection>
+        <!--suppress UnresolvedMavenProperty -->
         <developerConnection>scm:git:http://${GIT_USERNAME}:${GIT_PASSWORD}!@github.com/hiskrtapps/apocalypse-dao-api.git</developerConnection>
         <url>https://github.com/hiskrtapps/apocalypse-dao-api</url>
         <tag>HEAD</tag>

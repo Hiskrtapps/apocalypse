@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.paging;
+package io.github.hiskrtapps.apocalypse.dao.api.paging;
 
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,11 +1,11 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.exceptions;
+package io.github.hiskrtapps.apocalypse.dao.api.exceptions;
 
 import javax.persistence.PersistenceException;
 
-import io.github.hiskrtapps.apocalypse.dao.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
 
 /**
  * Exception raised when a Metadata object is not found using specified

@@ -1,11 +1,11 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.paging;
+package io.github.hiskrtapps.apocalypse.dao.api.paging;
 
 import java.util.Arrays;
 
-import io.github.hiskrtapps.apocalypse.dao.TestCompleteMockEntity;
+import io.github.hiskrtapps.apocalypse.dao.api.TestCompleteMockEntity;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

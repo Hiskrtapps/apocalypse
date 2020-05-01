@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.paging;
+package io.github.hiskrtapps.apocalypse.dao.api.paging;
 
 /**
  * PropertyPath implements the pairing of an {@link Direction} and a property.

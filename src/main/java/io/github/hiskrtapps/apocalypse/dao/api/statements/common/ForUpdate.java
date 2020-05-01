@@ -1,10 +1,10 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.statements.common;
+package io.github.hiskrtapps.apocalypse.dao.api.statements.common;
 
-import io.github.hiskrtapps.apocalypse.dao.Entity;
-import io.github.hiskrtapps.apocalypse.dao.statements.Find;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.statements.Find;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Map;

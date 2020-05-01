@@ -1,15 +1,15 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.statements;
+package io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.statements;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.EntityMetadata;
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.EntityMetadataImpl;
-import io.github.hiskrtapps.apocalypse.dao.TestCompleteMockEntity;
-import io.github.hiskrtapps.apocalypse.dao.TestNoSequenceMockEntity;
+import io.github.hiskrtapps.apocalypse.dao.api.TestCompleteMockEntity;
+import io.github.hiskrtapps.apocalypse.dao.api.TestNoSequenceMockEntity;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.EntityMetadata;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.EntityMetadataImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

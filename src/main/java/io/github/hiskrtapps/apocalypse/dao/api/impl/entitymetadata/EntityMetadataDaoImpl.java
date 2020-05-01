@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata;
+package io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata;
 
 import static java.util.stream.IntStream.of;
 
@@ -14,23 +14,23 @@ import javax.inject.Inject;
 import javax.persistence.Column;
 import javax.persistence.UniqueConstraint;
 
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.statements.EntityMetadataDelete;
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.statements.EntityMetadataFind;
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.statements.EntityMetadataPersist;
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.statements.EntityMetadataUpdate;
-import io.github.hiskrtapps.apocalypse.dao.Dao;
-import io.github.hiskrtapps.apocalypse.dao.Entity;
-import io.github.hiskrtapps.apocalypse.dao.Sao;
-import io.github.hiskrtapps.apocalypse.dao.criteria.Criteria;
-import io.github.hiskrtapps.apocalypse.dao.exceptions.ColumnNotFoundException;
-import io.github.hiskrtapps.apocalypse.dao.exceptions.OneAffectedEntityExpectedException;
-import io.github.hiskrtapps.apocalypse.dao.exceptions.PrimaryKeyNotFoundException;
-import io.github.hiskrtapps.apocalypse.dao.exceptions.UniqueConstraintNotFoundException;
-import io.github.hiskrtapps.apocalypse.dao.impl.DaoImpl;
-import io.github.hiskrtapps.apocalypse.dao.paging.Order;
-import io.github.hiskrtapps.apocalypse.dao.paging.Page;
-import io.github.hiskrtapps.apocalypse.dao.statements.Find;
-import io.github.hiskrtapps.apocalypse.dao.statements.Modification;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.DaoImpl;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.statements.EntityMetadataDelete;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.statements.EntityMetadataFind;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.statements.EntityMetadataPersist;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.statements.EntityMetadataUpdate;
+import io.github.hiskrtapps.apocalypse.dao.api.Dao;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.Sao;
+import io.github.hiskrtapps.apocalypse.dao.api.criteria.Criteria;
+import io.github.hiskrtapps.apocalypse.dao.api.exceptions.ColumnNotFoundException;
+import io.github.hiskrtapps.apocalypse.dao.api.exceptions.OneAffectedEntityExpectedException;
+import io.github.hiskrtapps.apocalypse.dao.api.exceptions.PrimaryKeyNotFoundException;
+import io.github.hiskrtapps.apocalypse.dao.api.exceptions.UniqueConstraintNotFoundException;
+import io.github.hiskrtapps.apocalypse.dao.api.paging.Order;
+import io.github.hiskrtapps.apocalypse.dao.api.paging.Page;
+import io.github.hiskrtapps.apocalypse.dao.api.statements.Find;
+import io.github.hiskrtapps.apocalypse.dao.api.statements.Modification;
 
 /**
  * EntityMetadataDaoImpl implementation one purpose:

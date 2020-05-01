@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.statements;
+package io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.statements;
 
 import static org.apache.commons.lang3.StringUtils.join;
 
@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import io.github.hiskrtapps.apocalypse.dao.Entity;
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.EntityMetadata;
-import io.github.hiskrtapps.apocalypse.dao.statements.Modification;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.EntityMetadata;
+import io.github.hiskrtapps.apocalypse.dao.api.statements.Modification;
 
 /**
  * Class to format a persist statement.

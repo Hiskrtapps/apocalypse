@@ -1,9 +1,9 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.exceptions;
+package io.github.hiskrtapps.apocalypse.dao.api.exceptions;
 
-import io.github.hiskrtapps.apocalypse.dao.TestCompleteMockEntity;
+import io.github.hiskrtapps.apocalypse.dao.api.TestCompleteMockEntity;
 //import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;

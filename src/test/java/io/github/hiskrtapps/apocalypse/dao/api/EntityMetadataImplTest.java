@@ -1,15 +1,15 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao;
+package io.github.hiskrtapps.apocalypse.dao.api;
 
 import java.util.HashMap;
 
 import javax.persistence.Column;
 import javax.persistence.UniqueConstraint;
 
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.EntityMetadata;
-import io.github.hiskrtapps.apocalypse.dao.impl.entitymetadata.EntityMetadataImpl;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.EntityMetadata;
+import io.github.hiskrtapps.apocalypse.dao.api.impl.entitymetadata.EntityMetadataImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

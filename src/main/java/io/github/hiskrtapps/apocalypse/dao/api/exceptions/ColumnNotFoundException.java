@@ -1,9 +1,9 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.exceptions;
+package io.github.hiskrtapps.apocalypse.dao.api.exceptions;
 
-import io.github.hiskrtapps.apocalypse.dao.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
 
 /**
  * Exception raised when a Column object is not found using specified parameters

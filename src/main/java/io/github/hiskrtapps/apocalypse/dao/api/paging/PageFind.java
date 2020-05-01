@@ -1,11 +1,11 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.paging;
+package io.github.hiskrtapps.apocalypse.dao.api.paging;
 
-import io.github.hiskrtapps.apocalypse.dao.Dao;
-import io.github.hiskrtapps.apocalypse.dao.Entity;
-import io.github.hiskrtapps.apocalypse.dao.statements.Find;
+import io.github.hiskrtapps.apocalypse.dao.api.Dao;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.statements.Find;
 
 /**
  * Common class for paginated find statement

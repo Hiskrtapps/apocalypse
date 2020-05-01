@@ -1,7 +1,7 @@
 /*
  * © 2020 Ceppi Productions.
  */
-package io.github.hiskrtapps.apocalypse.dao.statements.common;
+package io.github.hiskrtapps.apocalypse.dao.api.statements.common;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import io.github.hiskrtapps.apocalypse.dao.Entity;
-import io.github.hiskrtapps.apocalypse.dao.statements.Find;
-import io.github.hiskrtapps.apocalypse.dao.statements.Statement;
+import io.github.hiskrtapps.apocalypse.dao.api.Entity;
+import io.github.hiskrtapps.apocalypse.dao.api.statements.Find;
+import io.github.hiskrtapps.apocalypse.dao.api.statements.Statement;
 
 /**
  * Find composed of several finds of the same entity and join them by an UNION or UNION ALL
