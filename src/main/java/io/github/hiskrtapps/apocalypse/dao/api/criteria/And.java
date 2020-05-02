@@ -24,7 +24,6 @@ import java.util.Map;
  * If less than 2 criteria are given to compose the {@link And} criteria; the
  * {@link Truth} Identity Element is used at the place of the 1 or 2 missing
  * criteria.
- *
  */
 public final class And extends CriteriaImpl {
 
